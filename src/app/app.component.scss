@@ -1,0 +1,28 @@
+$spacing: 5px;
+
+h1 {
+  margin: 0;
+  padding: $spacing;
+  text-align: center;
+}
+
+.container {
+  width: calc(100% - 2px);
+  display: flex;
+  padding: $spacing;
+  margin: 1px;
+  background-color: #000;
+  flex-grow: 1;
+  flex-direction: row;
+
+  .column {
+    flex: 1;
+    margin: $spacing;
+    padding: $spacing;
+    background-color: white;
+
+    &.output {
+      font-family: monospace;
+    }
+  }
+}
